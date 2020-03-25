@@ -107,10 +107,10 @@ error(xnew, xold) {
     return Math.abs((xnew - xold) / xnew);
 }
 func(X) {  
-    let scope = { x: parseFloat(X) }; //แปลงค่า string หรือตัวแปรให้เป็น Number
+    let scope = { x: parseFloat(X) };
     var variable = compile(this.state.fx);
   
-    return variable.eval(scope); //eval compile 'String'
+    return variable.eval(scope); 
 }
 createTable(xl, xr, x, error) {
     dataT = []
